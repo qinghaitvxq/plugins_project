@@ -17,6 +17,9 @@ class Tabs {
     }
     bindEvents() {
         dom.on(this.options.element, 'click', `${this.options.navSelector}>li`, (e, el) => {
+            console.log('bindEvents');
+            console.log(e);
+            console.log(el);
             let index = dom.index(el)
             let children = this.options.element.querySelector(this.options.panesSelector).children
             dom.uniqueClass(el, this.options.activeClassName)
