@@ -1,0 +1,22 @@
+{
+  "name": "plugins_project",
+  "version": "1.0.0",
+  "description": "<a href=\"https://github.com/qinghaitvxq/plugins_project/blob/master/index.html\">\r     Tabs 组件\r </a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinghaitvxq/plugins_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qinghaitvxq/plugins_project/issues"
+  },
+  "homepage": "https://github.com/qinghaitvxq/plugins_project#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
