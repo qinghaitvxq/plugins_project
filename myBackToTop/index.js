@@ -1,31 +1,6 @@
 /**
  * Created by caipf on 2017/6/12.
  */
-// class BackToTop{
-//     constructor(options){
-//         let defaultOptions={
-//             element:''
-//         }
-//         this.options=Object.assign({},defaultOptions,options);
-//         this.checkOptions().bindEvent();
-//     }
-//     checkOptions(){
-//         if(!this.options.element){
-//             let div=document.createElement("div");
-//             div.setAttribute("class","backToTop");
-//             div.setAttribute("id","backToTop");
-//             document.querySelector("body").appendChild(div);
-//             this.options.element=div;
-//         }
-//         return this;
-//     }
-//     bindEvent(){
-//        this.options.element.addEventListener('click',(e)=>{
-//            alert('hello world');
-//        });
-//        return this;
-//     }
-// }
 
 (function ($) {
     class BackToTop{
@@ -47,7 +22,6 @@
             return this;
         }
         _watchScroll(){
-
             dom.throttle(()=>{
                 console.log('window is scrolling');
                 let soTop=document.documentElement.scrollTop||document.body.scrollTop;
@@ -59,14 +33,6 @@
                     this.options.element.style.display="none";
                 }
             },this);
-            // var soTop=document.documentElement.scrollTop||document.body.scrollTop;
-            // var clientHeight=document.documentElement.clientHeight;
-            // if(soTop>clientHeight/2){
-            //     this.options.element.style.display="block";
-            // }
-            // else {
-            //     this.options.element.style.display="none";
-            // }
         }
         bindEvent(){
             window.onscroll=this._watchScroll.bind(this);
