@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/qinghaitvxq/plugins_project#readme",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "treeview": "0.0.3"
   }
 }

@@ -131,10 +131,8 @@
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="index.js"></script>
 <script>
-    new BackToTop({
-        element:document.querySelectorAll('.backToTop')[0]
+    $(function () {
+        $("#backToTop").goBackToTop();
     });
-
-    new BackToTop({});
 </script>
 </html>
