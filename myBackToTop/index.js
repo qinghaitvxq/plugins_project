@@ -47,10 +47,11 @@
             return this;
         }
         _watchScroll(){
-            console.log('window is scrolling');
+
             dom.throttle(()=>{
-                var soTop=document.documentElement.scrollTop||document.body.scrollTop;
-                var clientHeight=document.documentElement.clientHeight;
+                console.log('window is scrolling');
+                let soTop=document.documentElement.scrollTop||document.body.scrollTop;
+                let clientHeight=document.documentElement.clientHeight;
                 if(soTop>clientHeight/2){
                     this.options.element.style.display="block";
                 }
